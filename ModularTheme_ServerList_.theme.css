@@ -1,0 +1,97 @@
+//META{"name":"Minifiedserverlist","description":"3列サーバーリスト","author":"MATTYAN_20XX","version":"3"}*//{}
+/*アニメーション時間*/
+.guildsWrapper-5TJh6A,.guildsWrapper-5TJh6A:before,.guildsWrapper-5TJh6A>.scrollerWrap-2lJEkd{
+  transition-delay: var(--hover-animation-speed);
+  transition-duration: var(--hover-animation-speed);
+}
+/*アイコンをすこし左に埋めて非表示に*/
+.guildsWrapper-5TJh6A>.scrollerWrap-2lJEkd{
+  width: 200px;
+  right: 190px;
+  opacity: 0;
+}
+/*>を表示*/
+.guildsWrapper-5TJh6A:before{
+  position: absolute;
+  content: ">";
+  color: white;
+  right: 5px;
+  top: 50%;
+}
+/*>を表示させる隙間*/
+.guildsWrapper-5TJh6A{
+  width: 20px;
+}
+/*アイコンを移動*/
+.guildsWrapper-5TJh6A>.scrollerWrap-2lJEkd:hover{
+  right: 0;
+  opacity: 1;
+}
+/*スクローラーを右に移動*/
+.guildsWrapper-5TJh6A:hover{
+  width: 200px;
+}
+/*>を非表示に*/
+.guildsWrapper-5TJh6A:hover:before{
+  opacity: 0;
+}
+
+/*アクティビティ、ライブラリ、ストア、フレンド、プライベートちゃんねるの崩れを直す用*/
+.flex-1xMQg5>.scrollerWrap-2lJEkd,/*アクティビティ*/
+.gameLibrary-TTDw4Y>.scrollerWrap-2lJEkd,/*ライブラリ*/
+.homeWrapperNormal-2KSUEa>.scrollerWrap-2lJEkd,/*ストア*/
+.friendsTable-133bsv>.scrollerWrap-2lJEkd,/*フレンド*/
+.privateChannels-1nO12o>.scrollerWrap-2lJEkd{/*プライベートちゃんねる*/
+  width: 100%;
+}
+/*サーバーアイコンの整頓*/
+.guild-1EfMGQ{
+  margin: 5px 5px 5px 5px;
+  display: inline-block;
+}
+/*サーバーリストの真ん中を軸に*/
+.guildsWrapper-5TJh6A>.scrollerWrap-2lJEkd{
+  text-align: center;
+}
+/*オンラインのフレンドの数*/
+.friendsOnline-_wi_fM{
+  margin: auto;
+}
+/*サーバー追加ボタン修正*/
+.guildsAdd-21_IdK{
+  bottom: 10px;
+}
+/*線を真ん中に*/
+.guildSeparator-1X4GQ1{
+  width: 100%;
+}
+/*選択しているサーバーの表示*/
+.guildInner-3DSoA4{
+  border-radius: var(--radius-inner) !important;
+}
+.selected-ML3OIq::before{
+  background-color: transparent !important;
+  border-radius: var(--radius) !important;
+  width: 100% !important;
+  height: 100% !important;
+  position: absolute !important;
+  top: 18px !important;
+  left: -2px !important;
+  z-index: 1;
+  border: solid 2px !important;
+  border-color: white !important;
+  box-shadow: 0px 0px 3px white !important;
+}
+/*通知が来たサーバーの表示*/
+.unread-qLkInr::before{
+  background-color: transparent !important;
+  border-radius: var(--radius) !important;
+  width: 100% !important;
+  height: 100% !important;
+  position: absolute !important;
+  top: 4px !important;
+  left: -2px !important;
+  border: solid 2px !important;
+  border-color: red !important;
+  box-shadow: 0px 0px 3px red !important;
+}
