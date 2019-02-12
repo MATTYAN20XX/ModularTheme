@@ -1,0 +1,59 @@
+//META{"name":"Square_avatar","description":"正方形アバター","author":"MATTYAN_20XX","version":"1"}*//{}
+
+  /*square*/
+  .avatarDefault-35WC3R,.smallAvatar-1MzqAa {
+      border-radius: var(--radius);
+      z-index: 1;
+  }
+  /*アイコンの画像サイズ調整*/
+  .image-33JSyf,.inner-1W0Bkn,.maskProfile-1ObLFT{
+      -webkit-mask: none;
+      mask: none;
+      border-radius: var(--radius-inner);
+      z-index: 1;
+  }
+  .guildInner-3DSoA4,.guild-1EfMGQ,.guildsAdd-21_IdK {
+      border-radius: var(--radius-inner) !important;
+  }
+
+  .status-oxiHuE,.statusProfile-3ynqtt {
+      border-radius: var(--radius);
+  }
+  .avatar-3JE4B3,.avatar-xxlarge,.avatar-small {
+      border-radius: var(--radius);
+  }
+
+  /*members status*/
+/*左下のアイコン*/
+  .wrapper-2F3Zv8 .status-oxiHuE {
+      background-color: transparent !important;
+      border-radius: var(--radius) !important;
+      width: 100%;
+      height: 100%;
+      left: -2px;
+      bottom: -2px;
+  }
+
+/*ONLINE AFK OFFLINEのやつ*/
+  .content-OzHfo4 .avatarWrapper-3B0ndJ .wrapper-2F3Zv8 .status-2s6iDp {
+      background-color: transparent;
+      border-radius: var(--radius) !important;
+      width: 100%;
+      height: 100%;
+      bottom: -2px;
+  }
+  .online-2S838R {
+      border-color: #43b581 !important;
+      box-shadow: 0px 0px 3px #43b581;
+  }
+  .idle-3DEnRT {
+      border-color: #faa61a !important;
+      box-shadow: 0px 0px 3px #faa61a;
+  }
+  .dnd-1_xrcq {
+      border-color: #f04747 !important;
+      box-shadow: 0px 0px 3px #f04747;
+  }
+  .statusProfile-3ynqtt {
+      display: none;
+  }
