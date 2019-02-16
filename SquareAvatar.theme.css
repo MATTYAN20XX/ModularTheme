@@ -1,7 +1,7 @@
 //META{"name":"Square_avatar","description":"正方形アバター","author":"MATTYAN_20XX","version":"1"}*//{}
 
   /*square*/
-  .avatarDefault-35WC3R,.smallAvatar-1MzqAa {
+  .avatarDefault-35WC3R,.smallAvatar-1MzqAa,.icon-3o6xvg {
       border-radius: var(--radius);
       z-index: 1;
   }
@@ -15,13 +15,13 @@
   .guildInner-3DSoA4,.guild-1EfMGQ,.guildsAdd-21_IdK {
       border-radius: var(--radius-inner) !important;
   }
-
   .status-oxiHuE,.statusProfile-3ynqtt {
       border-radius: var(--radius);
   }
   .avatar-3JE4B3,.avatar-xxlarge,.avatar-small {
       border-radius: var(--radius);
   }
+
 
   /*members status*/
 /*左下のアイコン*/
